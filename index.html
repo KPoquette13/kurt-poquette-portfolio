@@ -8,11 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
-	<header class="masthead">
-		<img src="images/profile-2.jpg" class="profile-picture" alt="My Profile Picture">
-	    <p class="masthead-intro">Hi, I'm</p>
-	    <h1 class="masthead-heading">Kurt</h1>
-	    <h2 class="masthead-subheading">Web developer, brother, and oddly good baker</h2>
+	<header class="masthead clearfix">
+		<div class="container">
+			<img src="images/profile-2.jpg" class="profile-picture" alt="My Profile Picture">
+			<div class="masthead-text clearfix">
+			    <h1 class="masthead-heading">Kurt Poquette</h1>
+			    <h2 class="masthead-subheading">Aspiring Web Developer</h2>
+			    <h2 class="masthead-subheading">Rochester, NY</h2>
+		    </div>
+	    </div>
 	</header>
 	<div class="container">
 		<div class="col-1">
@@ -41,14 +45,10 @@
 		<section class="projects">
 			<hr />
 			<h1 class="projects-heading">Past Projects</h1>
+
+			<!--Project List -->
 			<ul class="project-images">
-				<li>
-					<a href="#openTimesModal">
-						<img src="images/hack-thumbnail.jpg" alt="Thumbnail of NY Times 'Hack'" class="project-thumbnail">
-					</a>
-					<div class="captions"><h3>Hack the Times activity</h3></div>
-					
-				</li>
+				<!-- First Row -->
 				<li>
 					<a href="#openKarmaModal">
 						<img src="images/karma-thumbnail.jpg" alt="Thumbnail of Karma Clone" class="project-thumbnail">
@@ -61,8 +61,34 @@
 					</a>
 					<div class="captions"><h3>jQuery Interactive Fighter</h3></div>
 				</li>
+				<li class="clearfix">
+					<a href="#">
+						<img src="images/shopping-list.jpg" class="project-thumbnail">
+					</a>
+					<div class="captions"><h3>jQuery Shopping List</h3></div>
+				</li>
+				<!--Second Row -->
+				<li>
+					<a href="#">
+						<img src="images/HoC.jpg" class="project-thumbnail">
+					</a>
+					<div class="captions"><h3>Hot or Cold Game</h3></div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/quiz.jpg" class="project-thumbnail">
+					</a>
+					<div class="captions"><h3>Javascript Quiz</h3></div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/ajax.jpg" class="project-thumbnail">
+					</a>
+					<div class="captions"><h3>Working with AJAX</h3></div>
+				</li>
 			</ul>
 
+			<!--Modals -->
 			<div id="openTimesModal" class="modalTimes">
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
